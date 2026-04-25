@@ -1,0 +1,17 @@
+name: MCA Approval Workflow
+on: [push] # Triggers when you push code
+
+jobs:
+  admin_review:
+    # This links the task to your environment!
+    environment: AdminLiveApproval 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate Pharmacy Payment
+        run: echo "Verifying pharmacy payment for job post..."
+      
+      - name: Validate Applicant Payment
+        run: echo "Verifying applicant fee..."
+
+      - name: Final Approval
+        run: echo "Admin has verified both payments. Making job visible!"
