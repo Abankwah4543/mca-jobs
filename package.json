@@ -1,0 +1,27 @@
+{
+  "name": "mca-job-platform",
+  "version": "1.0.0",
+  "description": "MCA Job Platform - Connecting Medical Sales Representatives with Pharmacies and Pharmaceutical Companies",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run build && npm run preview",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "mca",
+    "jobs",
+    "medical",
+    "pharma",
+    "platform",
+    "ghana"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
