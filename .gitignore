@@ -2,27 +2,57 @@
 # Dependencies
 node_modules/
 
-# Environment variables
-.env
-.env.local
-.env.*
-
 # Build outputs
 dist/
 build/
-target/
+*.js.map
+*.css.map
+
+# Environment variables
+.env
+.env.local
+*.env.*
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
 
 # Logs
 *.log
 
-# IDE and editor settings
-.vscode/
-.idea/
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Python (if any Python files exist in the project)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Distribution / packaging
+.Python
+*.egg-info/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing
+.mypy_cache/
+.pytest_cache/
+.hypothesis/
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
-# Package lock files
-package-lock.json
+# Vite specific
+!.vite/
+vite.config.js.timestamp*
 ```
